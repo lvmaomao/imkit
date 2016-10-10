@@ -44,9 +44,14 @@
     <string name="rc_message_content_rich_text">[RichContent]</string>
     <string name="rc_message_content_location">[Location]</string>
     <string name="rc_message_content_draft">[Draft]</string>
+    <string name="rc_message_content_mentioned">[You were mentioned]</string>
 
     <string name="rc_dialog_item_message_delete">Delete</string>
     <string name="rc_dialog_item_message_copy">Copy</string>
+    <string name="rc_dialog_item_message_recall">Recall</string>
+    <string name="rc_recall_failed">Recall failed</string>
+    <string name="rc_you_recalled_a_message">You recalled a message</string>
+    <string name="rc_recalled_a_message">&#160;recalled a message</string>
 
     <string name="rc_message_unread_count">"···"</string>
     <string name="rc_input_voice">Hold to Talk</string>
@@ -92,7 +97,7 @@
     <string name="rc_notice_select_one_picture_at_last">Please select at least a picture</string>
 
     <string name="rc_message_unknown">The current version does not support viewing this message</string>
-
+    <string name="rc_new_messages">&#160;new messages</string>
     <string name="rc_info_not_in_discussion">You are not in current discussion</string>
     <string name="rc_info_not_in_group">You are not in current group</string>
     <string name="rc_info_not_in_chatroom">You are not in current chat room</string>
@@ -103,6 +108,21 @@
 
     <string name="rc_send_format">Send(%1$s)</string>
     <string name="rc_yesterday_format">Yesterday</string>
+    <string name="rc_year_format"></string>
+    <string name="rc_month_format"></string>
+    <string name="rc_day_format"></string>
+    <string name="rc_monday_format">Mon</string>
+    <string name="rc_tuesday_format">Tue</string>
+    <string name="rc_wednesday_format">Wed</string>
+    <string name="rc_thuresday_format">Thu</string>
+    <string name="rc_friday_format">Fri</string>
+    <string name="rc_saturday_format">Sat</string>
+    <string name="rc_sunsay_format">Sun</string>
+    <string name="rc_daybreak_format">AM</string>
+    <string name="rc_morning_format">AM</string>
+    <string name="rc_noon_format">PM</string>
+    <string name="rc_afternoon_format">PM</string>
+    <string name="rc_night_format">PM</string>
     <string name="rc_waiting">Connecting</string>
     <string name="rc_file_not_exist">File does not exist</string>
     <string name="rc_network_is_busy">Network is busy</string>
@@ -157,6 +177,9 @@
 
 
     <string name="rc_join_chatroom_failure">Join chatroom failure</string>
+    <string name="rc_cs_select_group">Please select the contents</string>
+    <string name="rc_search">Search</string>
+    <string name="rc_choose_members">Select Member</string>
 
 
     <string name="rc_quit_custom_service">Custom Service Have Quit</string>

@@ -38,7 +38,7 @@
             android:background="@android:color/transparent"
             android:gravity="right|top"
             android:textColor="@color/rc_text_color_secondary"
-            android:textSize="@dimen/rc_conversation_item_data_size" />
+            android:textSize="@dimen/rc_conversation_item_time_size" />
     </LinearLayout>
 
     <RelativeLayout

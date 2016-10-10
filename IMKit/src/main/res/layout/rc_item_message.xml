@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rc_layout_item_message"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
 
     <TextView
         android:id="@id/rc_time"
-        style="@style/RCTheme.Notification"
+        style="@style/RCTheme.MessageTime"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp" />
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp" />
 
     <io.rong.imkit.widget.AsyncImageView
         android:id="@id/rc_left"
@@ -25,7 +31,6 @@
         android:layout_marginRight="4dp"
         android:background="@android:color/transparent"
         app:RCCornerRadius="3dp"
-        app:RCShape="circle"
         app:RCDefDrawable="@drawable/rc_ic_def_msg_portrait" />
 
     <io.rong.imkit.widget.AsyncImageView
@@ -35,7 +40,6 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/rc_time"
         android:layout_marginLeft="4dp"
-        app:RCShape="circle"
         android:background="@android:color/transparent"
         app:RCCornerRadius="3dp"
         app:RCDefDrawable="@drawable/rc_ic_def_msg_portrait" />
@@ -50,8 +54,11 @@
         android:layout_marginTop="-3dp"
         android:layout_toLeftOf="@id/rc_right"
         android:layout_toRightOf="@id/rc_left"
+        android:ellipsize="end"
         android:gravity="center_vertical"
-        android:visibility="gone" />
+        android:maxEms="14"
+        android:singleLine="true"
+        android:visibility="gone"/>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -101,7 +108,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:layout_marginRight="2dp"
+                android:layout_marginRight="4dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@id/rc_read_receipt_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/rc_read_receipt_request_button"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/rc_read_receipt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:paddingBottom="11dp"
+                android:layout_marginRight="4dp"
+                android:text="@string/rc_read_receipt_status"
+                android:textColor="@color/rc_read_receipt_status"
+                android:textSize="12sp"
                 android:visibility="gone" />
 
             <io.rong.imkit.widget.ProviderContainerView

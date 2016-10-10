@@ -36,9 +36,15 @@
     <string name="rc_message_content_rich_text">[图文]</string>
     <string name="rc_message_content_location">[位置]</string>
     <string name="rc_message_content_draft">[草稿]</string>
+    <string name="rc_message_content_mentioned">[有人@我]</string>
+    <string name="rc_message_content_file">[文件]</string>
 
     <string name="rc_dialog_item_message_delete">删除消息</string>
     <string name="rc_dialog_item_message_copy">复制消息</string>
+    <string name="rc_dialog_item_message_recall">撤回消息</string>
+    <string name="rc_recall_failed">撤回失败</string>
+    <string name="rc_you_recalled_a_message">你撤回了一条消息</string>
+    <string name="rc_recalled_a_message">撤回了一条消息</string>
 
     <string name="rc_message_unread_count">"···"</string>
     <string name="rc_input_voice">按住 说话</string>
@@ -61,6 +67,7 @@
     <string name="rc_plugins_location">位置</string>
     <string name="rc_plugins_image">图片</string>
     <string name="rc_plugins_camera">相机</string>
+    <string name="rc_plugins_files">文件</string>
 
     <string name="rc_voice_rec">手指上滑，取消发送</string>
     <string name="rc_voice_cancel">松开手指，取消发送</string>
@@ -72,7 +79,7 @@
     <string name="rc_pub_service_info_enter">进入公众号</string>
     <string name="rc_pub_service_info_follow">关注</string>
     <string name="rc_pub_service_info_unfollow">取消关注</string>
-    <string name="rc_pub_service_info_account">公众号：%1$s</string>
+    <string name="rc_pub_service_info_account">公众号：%s</string>
 
     <string name="rc_notice_network_unavailable">网络连接不可用</string>
     <string name="rc_notice_disconnect">无法连接到服务器</string>
@@ -88,7 +95,7 @@
     <string name="rc_notice_select_one_picture_at_last">请至少选择一张图片</string>
 
     <string name="rc_message_unknown">当前版本暂不支持查看此消息</string>
-
+    <string name="rc_new_messages">条新消息</string>
     <string name="rc_info_not_in_discussion">你不在该讨论组</string>
     <string name="rc_info_not_in_group">你不在该群</string>
     <string name="rc_info_not_in_chatroom">你不在该聊天室</string>
@@ -99,7 +106,22 @@
     <string name="rc_join_chatroom_failure">加入聊天室失败</string>
 
     <string name="rc_send_format">发送(%1$s)</string>
-    <string name="rc_yesterday_format">昨天 %1$s</string>
+    <string name="rc_yesterday_format">昨天</string>
+    <string name="rc_year_format">年</string>
+    <string name="rc_month_format">月</string>
+    <string name="rc_day_format">日</string>
+    <string name="rc_monday_format">周一</string>
+    <string name="rc_tuesday_format">周二</string>
+    <string name="rc_wednesday_format">周三</string>
+    <string name="rc_thuresday_format">周四</string>
+    <string name="rc_friday_format">周五</string>
+    <string name="rc_saturday_format">周六</string>
+    <string name="rc_sunsay_format">周日</string>
+    <string name="rc_daybreak_format">凌晨</string>
+    <string name="rc_morning_format">早上</string>
+    <string name="rc_noon_format">中午</string>
+    <string name="rc_afternoon_format">下午</string>
+    <string name="rc_night_format">晚上</string>
     <string name="rc_waiting">等待中</string>
     <string name="rc_file_not_exist">文件不存在</string>
     <string name="rc_network_is_busy">网络繁忙</string>
@@ -151,7 +173,46 @@
     <string name="rc_permission_microphone_and_camera">（麦克风，相机）。</string>
     <string name="rc_permission_camera">（相机）。</string>
     <string name="rc_blacklist_prompt">您已被加入黑名单</string>
+    <string name="rc_cs_select_group">请选择咨询内容</string>
+    <string name="rc_search">搜索</string>
+    <string name="rc_choose_members">选择联系人</string>
 
+    <string name="rc_ac_file_download_preview">文件预览</string>
+    <string name="rc_ac_file_manager_category_title">按分类查找</string>
+    <string name="rc_ac_file_manager_category_file">文档</string>
+    <string name="rc_ac_file_manager_category_video">视频</string>
+    <string name="rc_ac_file_manager_category_audio">音频</string>
+    <string name="rc_ac_file_manager_category_picture">其他</string>
+    <string name="rc_ac_file_manager_dir_title">按目录查找</string>
+    <string name="rc_ac_file_manager_mobile_memory">手机内存</string>
+    <string name="rc_ac_file_manager_SD_card">SD卡</string>
+    <string name="rc_fr_storage_folder_list_search">搜索</string>
+    <string name="rc_fr_storage_folder_list_no_files">无法读取%1$s中的文件</string>
+    <string name="rc_ad_folder_files_number">%1$s个文件</string>
+    <string name="rc_ad_folder_no_files">空文件夹</string>
+    <string name="rc_ad_file_size">大小:%1$s</string>
+    <string name="rc_ac_file_download_btn">开始下载</string>
+    <string name="rc_ac_file_download_progress_tv">正在下载...(%1$s/%2$s)</string>
+    <string name="rc_ac_file_download_open_file_btn">用其他应用打开</string>
+    <string name="rc_ac_file_send_preview">发文件</string>
+    <string name="rc_ad_send_file_no_select_file">发送</string>
+    <string name="rc_ad_send_file_select_file">发送(%1$s/20)</string>
+    <string name="rc_fr_no_file_message">还没有%1$s文件</string>
+    <string name="rc_fr_loading_file_message">加载中...</string>
+    <string name="rc_fr_file_category_title_text">文本</string>
+    <string name="rc_fr_file_category_title_video">视频</string>
+    <string name="rc_fr_file_category_title_audio">音频</string>
+    <string name="rc_fr_file_category_title_other">其他</string>
+    <string name="rc_fr_file_category_title_sd">SD卡</string>
+    <string name="rc_fr_file_category_title_ram">手机内存</string>
+    <string name="rc_ac_file_preview_can_not_open_file">无法打开文件</string>
+    <string name="rc_ac_file_preview_begin_download">开始下载</string>
+    <string name="rc_ac_file_preview_downloaded">已下载</string>
+    <string name="rc_ac_file_preview_download_error">下载失败</string>
+    <string name="rc_ac_file_preview_download_cancel">已取消下载</string>
+    <string name="rc_ac_file_preview_deleted">文件已过期或已被清理</string>
+    <string name="rc_fr_file_list_most_selected_files">您最多只能选择20个文件</string>
+    <string name="rc_read_receipt_status">%d人已读</string>
 
     <string name="rc_quit_custom_service">客服已结束</string>
     <string name="rc_init_failed">连接客服失败</string>
