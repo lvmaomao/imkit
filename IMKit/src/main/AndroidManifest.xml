@@ -36,6 +36,7 @@
 
         <activity
             android:name="io.rong.imkit.tools.RongWebviewActivity"
+            android:exported="false"
             android:screenOrientation="portrait">
             <!-- WebView IntentFilter Start -->
             <intent-filter>
