@@ -3,27 +3,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:id="@+id/rc_ac_ll_go_back"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="#0195ff">
-        <ImageView
-            android:id="@+id/rc_ac_iv_file_manager_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="3dp"
-            android:src="@drawable/rc_ac_file_preview"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="3dp"
-            android:textSize="16sp"
-            android:textColor="#ffffff"
-            android:text="@string/rc_ac_file_send_preview"/>
-    </LinearLayout>
     <TextView
         style="@style/rc_ac_file_manager_title"
         android:text="@string/rc_ac_file_manager_category_title"
@@ -120,4 +99,34 @@
     </LinearLayout>
     <View
         style="@style/rc_ac_file_manager_line"/>
+    <LinearLayout
+        android:id="@+id/rc_ac_ll_sd_card_one"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:visibility="gone">
+        <ImageView
+            style="@style/rc_ac_file_manager_image_style"
+            android:src="@drawable/rc_ac_sd_card_icon"/>
+        <TextView
+            android:id="@+id/rc_ac_tv_file_manager_SD_card_one"
+            android:text="@string/rc_ac_file_manager_SD_card_one"
+            style="@style/rc_ac_file_manager_style"
+            />
+    </LinearLayout>
+    <View
+        style="@style/rc_ac_file_manager_line"/>
+    <LinearLayout
+        android:id="@+id/rc_ac_ll_sd_card_two"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:visibility="gone">
+        <ImageView
+            style="@style/rc_ac_file_manager_image_style"
+            android:src="@drawable/rc_ac_sd_card_icon"/>
+        <TextView
+            android:id="@+id/rc_ac_tv_file_manager_SD_card_two"
+            android:text="@string/rc_ac_file_manager_SD_card_two"
+            style="@style/rc_ac_file_manager_style"
+            />
+    </LinearLayout>
 </LinearLayout>

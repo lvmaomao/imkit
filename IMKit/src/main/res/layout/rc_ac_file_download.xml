@@ -4,27 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        android:id="@+id/rc_ac_ll_file_download"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="#0195ff">
-        <ImageView
-            android:id="@+id/rc_ac_iv_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="3dp"
-            android:src="@drawable/rc_ac_file_preview"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="3dp"
-            android:textSize="16sp"
-            android:textColor="#ffffff"
-            android:text="@string/rc_ac_file_download_preview"/>
-    </LinearLayout>
-    <LinearLayout
         android:id="@+id/rc_ac_ll_download_file_detail_info"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="39dp"
